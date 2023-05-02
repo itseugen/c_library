@@ -6,7 +6,7 @@
 #    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/05/02 15:41:49 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/05/02 17:03:50 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,20 +28,21 @@ SOURCE += string/ft_split.c string/ft_strchr.c string/ft_strrchr.c string/ft_str
 		string/ft_strtrim.c string/ft_strmapi.c string/ft_striteri.c string/ft_strlen.c\
 		string/ft_strlcpy.c string/ft_strlcat.c string/ft_toupper.c string/ft_tolower.c
 SOURCE += write/ft_putchar_fd.c write/ft_putstr_fd.c write/ft_putendl_fd.c write/ft_putnbr_fd.c
+SOURCE += ft_printf/ft_printf.c ft_printf/ft_putchar_str.c ft_printf/ft_putnbrs.c
 
-BINARIES = $(SOURCE:.c=.o)
+OBJS = $(SOURCE:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(SOURCE) $(BINARIES)
-	ar rcs $(NAME) $(BINARIES)
+$(NAME): $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -f $(BINARIES)
+	@rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re clean_obj

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/25 18:02:12 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/25 18:05:30 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 16:13:33 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "write.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

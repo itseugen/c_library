@@ -6,10 +6,9 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 15:20:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/02 15:21:04 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 16:14:58 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef CHECK_H
 # define CHECK_H

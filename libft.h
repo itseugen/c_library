@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/19 09:36:37 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/02 15:27:01 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 17:04:29 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@
 # include "mem/mem.h"
 # include "string/string.h"
 # include "write/write.h"
+# include "ft_printf/ft_printf.h"
 
 #endif /* LIBFT_H */
