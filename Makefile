@@ -1,44 +1,47 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+         #
+#    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/03/29 15:58:50 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/05/02 15:41:49 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-CC = cc
+
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-SOURCE = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c\
-		ft_isprint.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strlen.c ft_strlcpy.c ft_strlcat.c\
-		ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c\
-		ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c\
-		ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
-		ft_putnbr_fd.c
+
+SOURCE = check/ft_isalnum.c check/ft_isalpha.c check/ft_isascii.c\
+		check/ft_isdigit.c check/ft_isprint.c
+SOURCE += lists/ft_lstnew.c lists/ft_lstadd_front.c lists/ft_lstsize.c\
+		lists/ft_lstlast.c lists/ft_lstadd_back.c lists/ft_lstdelone.c\
+		lists/ft_lstclear.c lists/ft_lstiter.c lists/ft_lstmap.c
+SOURCE += math/ft_atoi.c math/ft_itoa.c
+SOURCE += mem/ft_bzero.c mem/ft_calloc.c mem/ft_memcpy.c mem/ft_memmove.c\
+		mem/ft_memset.c mem/ft_memchr.c mem/ft_memcmp.c
+SOURCE += string/ft_split.c string/ft_strchr.c string/ft_strrchr.c string/ft_strncmp.c\
+		string/ft_strnstr.c string/ft_strdup.c string/ft_substr.c string/ft_strjoin.c\
+		string/ft_strtrim.c string/ft_strmapi.c string/ft_striteri.c string/ft_strlen.c\
+		string/ft_strlcpy.c string/ft_strlcat.c string/ft_toupper.c string/ft_tolower.c
+SOURCE += write/ft_putchar_fd.c write/ft_putstr_fd.c write/ft_putendl_fd.c write/ft_putnbr_fd.c
+
 BINARIES = $(SOURCE:.c=.o)
 
-BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
-		ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
-BONUSBIN = $(BONUS:.c=.o)
-
 all: $(NAME)
+
 $(NAME): $(SOURCE) $(BINARIES)
 	ar rcs $(NAME) $(BINARIES)
 
 clean:
-	rm -f $(BINARIES) $(BONUSBIN)
+	rm -f $(BINARIES)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-bonus: $(NAME) $(BONUS) $(BONUSBIN)
-	ar rcs $(NAME) $(BINARIES) $(BONUSBIN)
 
 .PHONY: all clean fclean re bonus

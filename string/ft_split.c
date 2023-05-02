@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 14:41:01 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/27 11:35:28 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 15:44:22 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "string.h"
 
 static size_t	count_substr(char const *s, char c);
 static char		*getstr(char const *s, size_t i, char c);

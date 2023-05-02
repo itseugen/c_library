@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 08:38:45 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/21 15:43:05 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 15:44:58 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "libft.h"
+#include "string.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

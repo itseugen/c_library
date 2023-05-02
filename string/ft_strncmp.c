@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 16:46:08 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/21 17:43:16 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 15:45:10 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "string.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

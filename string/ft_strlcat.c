@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eweiberl <eweiberl@student.42.fr>          +#+  +:+       +#+        */
+/*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/20 10:31:50 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/03/29 12:03:27 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/02 15:44:52 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "libft.h"
-#include <stdio.h>
+#include "string.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
