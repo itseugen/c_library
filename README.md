@@ -17,23 +17,23 @@ Coded in
 
 ---
 ## Includes following functions:
-- All functions in my [libft](github.com/itseugen/libft "Link to my libft repository").
-- My [get_next_line](github.com/itseugen/get_next_line "Link to my get_next_line repository") function (Note that this version can handle more than one file descriptor at a time).
-- My [own version of printf](github.com/itseugen/ft_printf "Link to my ft_printf repository").
+- All functions in my [libft](https://github.com/itseugen/libft "Link to my libft repository").
+- My [get_next_line](https://github.com/itseugen/get_next_line "Link to my get_next_line repository") function (Note that this version can handle more than one file descriptor at a time).
+- My [own version of printf](https://github.com/itseugen/ft_printf "Link to my ft_printf repository").
 ---
 ## Installation and Usage
 1. Clone the repository:
 ```shell
-% git clone https://github.com/itseugen/c_library libft
+git clone https://github.com/itseugen/c_library libft
 ```
 2. Enter the directory and build the library:
 ```shell
-% cd libft
-% make
+cd libft
+make
 ```
 Optional: Clean object files:
 ```shell
-% make clean
+make clean
 ```
 3. Include the headerfile in your function:
 ```C
@@ -45,8 +45,7 @@ If you clone the libft inside the repository you are working on it would look as
 #include "libft/libft.h"
 ```
 4. To compile correctly just add the "libft.a" in your compiler call:
-Example:
-```Shell
+```shell
 gcc myfile.c libft.a
 ```
 ---
