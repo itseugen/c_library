@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/19 09:36:37 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/02 17:33:09 by eweiberl         ###   ########.fr       */
+/*   Created: 2023/04/19 13:16:50 by eweiberl          #+#    #+#             */
+/*   Updated: 2023/05/01 11:53:57 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
-# include "lists/lists.h"
-# include "check/check.h"
-# include "math/math.h"
-# include "mem/mem.h"
-# include "string/string.h"
-# include "write/write.h"
-# include "printf/ft_printf.h"
-# include "gnl/get_next_line.h"
+int	ft_printf(const char *str, ...);
+int	ft_putchar(char c);
+int	ft_putstr(char *s);
+int	ft_putint(int n);
+int	ft_puthex(long n, char *hex);
+int	ft_put_ptr(void *ptr);
+int	ft_putunsigned(unsigned int n);
+int	ft_putnbr(int n);
 
-#endif /* LIBFT_H */
+#endif /* FT_PRINTF_H */

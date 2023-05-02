@@ -1,29 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putchar_str.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/19 09:36:37 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/02 17:33:09 by eweiberl         ###   ########.fr       */
+/*   Created: 2023/04/19 14:46:20 by eweiberl          #+#    #+#             */
+/*   Updated: 2023/04/27 15:09:58 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "ft_printf.h"
 
-# include <stddef.h>
-# include <stdlib.h>
-# include <unistd.h>
+static size_t	ft_strlen(const char *s);
 
-# include "lists/lists.h"
-# include "check/check.h"
-# include "math/math.h"
-# include "mem/mem.h"
-# include "string/string.h"
-# include "write/write.h"
-# include "printf/ft_printf.h"
-# include "gnl/get_next_line.h"
+int	ft_putchar(char c)
+{
+	return (write(1, &c, 1));
+}
 
-#endif /* LIBFT_H */
+int	ft_putstr(char *s)
+{
+	if (s == NULL)
+		return (write(1, "(null)", 6));
+	return (write(1, s, ft_strlen(s)));
+}
+
+static size_t	ft_strlen(const char *s)
+{
+	int	str_len;
+
+	str_len = 0;
+	while (s[str_len] != '\0')
+		str_len++;
+	return (str_len);
+}
