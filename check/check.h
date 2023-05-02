@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   check.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/19 09:36:37 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/02 15:27:01 by eweiberl         ###   ########.fr       */
+/*   Created: 2023/05/02 15:20:21 by eweiberl          #+#    #+#             */
+/*   Updated: 2023/05/02 15:21:04 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
 
-# include <stddef.h>
-# include <stdlib.h>
-# include <unistd.h>
+#ifndef CHECK_H
+# define CHECK_H
 
-# include "lists/lists.h"
-# include "check/check.h"
-# include "math/math.h"
-# include "mem/mem.h"
-# include "string/string.h"
-# include "write/write.h"
+# include "../libft.h"
 
-#endif /* LIBFT_H */
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+
+#endif
