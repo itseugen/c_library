@@ -20,6 +20,7 @@ Coded in
 - All functions in my [libft](https://github.com/itseugen/libft "Link to my libft repository").
 - My [get_next_line](https://github.com/itseugen/get_next_line "Link to my get_next_line repository") function (Note that this version can handle more than one file descriptor at a time).
 - My [own version of printf](https://github.com/itseugen/ft_printf "Link to my ft_printf repository").
+- ft_isstr: A function that applies a function that takes an integer (for example isdigit) to an entire string and returns 1 if the function returns 1 for the entire string.
 ---
 ## Installation and Usage
 1. Clone the repository:
