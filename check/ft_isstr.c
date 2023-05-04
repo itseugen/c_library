@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check.h                                            :+:      :+:    :+:   */
+/*   ft_isstr.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 15:20:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/04 14:29:04 by eweiberl         ###   ########.fr       */
+/*   Created: 2023/05/04 14:28:34 by eweiberl          #+#    #+#             */
+/*   Updated: 2023/05/04 14:28:52 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CHECK_H
-# define CHECK_H
+int	ft_isstr(char *s, int (*f)(int))
+{
+	unsigned int	i;
 
-# include "../libft.h"
-
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-int		ft_isstr(char *s, int (*f)(int));
-
-#endif
+	i = 0;
+	while (s[i])
+	{
+		if (f((s[i])) != 1)
+			return (0);
+		i++;
+	}
+	return (1);
+}

@@ -6,7 +6,7 @@
 #    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/05/02 17:32:58 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/05/04 14:30:09 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
 SOURCE = check/ft_isalnum.c check/ft_isalpha.c check/ft_isascii.c\
-		check/ft_isdigit.c check/ft_isprint.c
+		check/ft_isdigit.c check/ft_isprint.c check/ft_isstr.c
 SOURCE += lists/ft_lstnew.c lists/ft_lstadd_front.c lists/ft_lstsize.c\
 		lists/ft_lstlast.c lists/ft_lstadd_back.c lists/ft_lstdelone.c\
 		lists/ft_lstclear.c lists/ft_lstiter.c lists/ft_lstmap.c
@@ -36,7 +36,7 @@ OBJS = $(SOURCE:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
 	@rm -f $(OBJS)
