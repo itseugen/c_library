@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 15:56:07 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/05/04 16:03:24 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/05/04 16:15:12 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	red(void)
 {
-	printf("\033[0;31m");
+	ft_printf("\033[0;31m");
 }
 
 void	black(void)
