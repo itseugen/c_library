@@ -91,7 +91,7 @@ int	ft_put_ptr(void *ptr)
 	i = 0;
 	if (ptr == NULL)
 		return (ft_putstr("0x0"));
-	n = (unsigned long)ptr;
+	n = (long long)ptr;
 	while (n != 0)
 	{
 		buff[i] = hex[n % 16];
