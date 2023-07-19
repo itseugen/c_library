@@ -13,7 +13,7 @@
 NAME = libft.a
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 SOURCE = check/ft_isalnum.c check/ft_isalpha.c check/ft_isascii.c\
 		check/ft_isdigit.c check/ft_isprint.c check/ft_isstr.c
