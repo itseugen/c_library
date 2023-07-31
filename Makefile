@@ -6,7 +6,7 @@
 #    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/07/31 16:21:51 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/07/31 16:26:37 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,9 +38,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-
-debug: $(OBJS)
-	ar rcs $(NAME) -g $(OBJS)
 
 clean:
 	@rm -f $(OBJS)
