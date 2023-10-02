@@ -6,7 +6,7 @@
 #    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/10/02 16:02:43 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/10/02 16:08:41 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SOURCE = check/ft_isalnum.c check/ft_isalpha.c check/ft_isascii.c\
 SOURCE += lists/ft_lstnew.c lists/ft_lstadd_front.c lists/ft_lstsize.c\
 		lists/ft_lstlast.c lists/ft_lstadd_back.c lists/ft_lstdelone.c\
 		lists/ft_lstclear.c lists/ft_lstiter.c lists/ft_lstmap.c
-SOURCE += math/ft_atoi.c math/ft_itoa.c math/ft_abs.c
+SOURCE += math/ft_atoi.c math/ft_itoa.c math/ft_abs.c math/ft_atof.c
 SOURCE += mem/ft_bzero.c mem/ft_calloc.c mem/ft_memcpy.c mem/ft_memmove.c\
 		mem/ft_memset.c mem/ft_memchr.c mem/ft_memcmp.c
 SOURCE += string/ft_split.c string/ft_strchr.c string/ft_strrchr.c string/ft_strncmp.c\
