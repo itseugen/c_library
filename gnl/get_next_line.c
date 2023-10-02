@@ -12,6 +12,9 @@
 
 #include "get_next_line.h"
 
+/// @brief Gets the next line of a file descriptor
+/// @param fd the file descriptor to read from
+/// @return the line read or NULL if reading is finished (or on error)
 char	*get_next_line(int fd)
 {
 	static char	*str[4096];
