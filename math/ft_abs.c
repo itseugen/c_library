@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   math.h                                             :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 15:21:49 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/02 16:04:08 by eweiberl         ###   ########.fr       */
+/*   Created: 2023/10/02 16:02:47 by eweiberl          #+#    #+#             */
+/*   Updated: 2023/10/02 16:03:48 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATH_H
-# define MATH_H
-
-# include "../libft.h"
-
-int		ft_atoi(const char *str);
-char	*ft_itoa(int n);
-int		ft_abs(int nb);
-
-#endif
+/// @brief Returns the absolute value of an int (INT_MAX returns INT_MAX)
+/// @param nb 
+/// @return the absolute value of the int
+int	ft_abs(int nb)
+{
+	if (nb >= 0)
+		return (nb);
+	else if (nb == -2147483648)
+		return (nb);
+	else
+		return (-nb);
+}
