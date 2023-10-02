@@ -22,6 +22,8 @@ Coded in
 - My [own version of printf](https://github.com/itseugen/ft_printf "Link to my ft_printf repository").
 - ft_isstr: A function that applies a function that takes an integer (for example isdigit) to an entire string and returns 1 if the function returns 1 for the entire string.
 - Terminal colours: Functions to change the colour your programs output in the terminal.
+- An implementation of the [abs()](https://man7.org/linux/man-pages/man3/abs.3.html "Link to the man page of abs") function.
+- My version of [atof()](https://man7.org/linux/man-pages/man3/atof.3.html "Link to the man page of atof").
 ---
 ## Installation and Usage
 1. Clone the repository:
