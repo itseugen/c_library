@@ -24,6 +24,7 @@ Coded in
 - Terminal colours: Functions to change the colour your programs output in the terminal.
 - An implementation of the [abs()](https://man7.org/linux/man-pages/man3/abs.3.html "Link to the man page of abs") function.
 - My version of [atof()](https://man7.org/linux/man-pages/man3/atof.3.html "Link to the man page of atof").
+- A version of [fprintf](https://man7.org/linux/man-pages/man3/fprintf.3p.html "Link to the man page of fprintf"), works just like my ft_printf except taking a file descriptor to print to.
 ---
 ## Installation and Usage
 1. Clone the repository:
