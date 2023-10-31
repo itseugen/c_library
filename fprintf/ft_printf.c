@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:17:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:53:27 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:55:49 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,22 +72,22 @@ static int	varhandle(int fd, char c, va_list args)
 
 	cnt = 0;
 	if (c == 'c')
-		cnt = ft_putchar(fd, va_arg(args, int));
+		cnt = ft_fputchar(fd, va_arg(args, int));
 	if (c == 's')
-		cnt = ft_putstr(fd, va_arg(args, char *));
+		cnt = ft_fputstr(fd, va_arg(args, char *));
 	if (c == '%')
-		cnt = ft_putchar(fd, '%');
+		cnt = ft_fputchar(fd, '%');
 	if (c == 'i' || c == 'd')
-		cnt = ft_putint(fd, va_arg(args, int));
+		cnt = ft_fputint(fd, va_arg(args, int));
 	if (c == 'x')
-		cnt = ft_puthex(fd, (long)va_arg(args, unsigned int),
+		cnt = ft_fputhex(fd, (long)va_arg(args, unsigned int),
 				"0123456789abcdef");
 	if (c == 'X')
-		cnt = ft_puthex(fd, (long)va_arg(args, unsigned int),
+		cnt = ft_fputhex(fd, (long)va_arg(args, unsigned int),
 				"0123456789ABCDEF");
 	if (c == 'p')
-		cnt = ft_put_ptr(fd, va_arg(args, void *));
+		cnt = ft_fput_ptr(fd, va_arg(args, void *));
 	if (c == 'u')
-		cnt = ft_putunsigned(fd, va_arg(args, unsigned int));
+		cnt = ft_fputunsigned(fd, va_arg(args, unsigned int));
 	return (cnt);
 }
