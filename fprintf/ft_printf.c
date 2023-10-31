@@ -6,11 +6,11 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:17:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:50:02 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:53:27 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 
 static int	varhandle(int fd, char c, va_list args);
 static int	printfunc(int fd, const char *str, int ccount, va_list args);

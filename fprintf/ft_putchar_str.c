@@ -6,11 +6,11 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 14:46:20 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:48:24 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:53:29 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 
 static size_t	ft_strlen(const char *s);
 

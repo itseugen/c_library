@@ -6,11 +6,11 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/25 18:43:32 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:48:11 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:53:31 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 
 int	ft_fputint(int fd, int n)
 {
