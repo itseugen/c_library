@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:17:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:55:49 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/10/31 16:56:15 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_printf(int fd, const char *str, ...)
 	va_list	args;
 
 	va_start(args, str);
-	ccount = printfunc(str, 0, args);
+	ccount = printfunc(fd, str, 0, args);
 	va_end(args);
 	return (ccount);
 }
