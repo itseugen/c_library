@@ -6,7 +6,7 @@
 #    By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/29 15:58:47 by eweiberl          #+#    #+#              #
-#    Updated: 2023/10/02 16:08:41 by eweiberl         ###   ########.fr        #
+#    Updated: 2023/10/31 16:45:11 by eweiberl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,7 @@ SOURCE += string/ft_split.c string/ft_strchr.c string/ft_strrchr.c string/ft_str
 SOURCE += write/ft_putchar_fd.c write/ft_putstr_fd.c write/ft_putendl_fd.c write/ft_putnbr_fd.c
 SOURCE += printf/ft_printf.c printf/ft_putchar_str.c printf/ft_putnbrs.c printf/printcolour.c\
 		printf/printcolours2.c
+SOURCE += fprintf/ft_printf.c fprintf/ft_putchar_str.c fprintf/ft_putnbrs.c
 SOURCE += gnl/get_next_line.c gnl/get_next_line_utils.c
 
 OBJS = $(SOURCE:.c=.o)
