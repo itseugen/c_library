@@ -6,7 +6,7 @@
 /*   By: eweiberl <eweiberl@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:17:21 by eweiberl          #+#    #+#             */
-/*   Updated: 2023/10/31 16:56:15 by eweiberl         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:48:13 by eweiberl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	printfunc(int fd, const char *str, int ccount, va_list args);
 * DONE • %% Prints a percent sign.
 */
 
-int	ft_printf(int fd, const char *str, ...)
+int	ft_fprintf(int fd, const char *str, ...)
 {
 	int		ccount;
 	va_list	args;
