@@ -12,9 +12,6 @@
 
 #include "get_next_line.h"
 
-/// @brief Gets the next line of a file descriptor
-/// @param fd the file descriptor to read from
-/// @return the line read or NULL if reading is finished (or on error)
 char	*get_next_line(int fd)
 {
 	static char	*str[4096];
@@ -39,7 +36,7 @@ char	*read_till(int fd, char *str)
 	temp = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!temp)
 		return (NULL);
-	while (!gnl_strchr(str, '\n') && bytes_read != 0)
+	while (!ft_strchr(str, '\n') && bytes_read != 0)
 	{
 		bytes_read = read(fd, temp, BUFFER_SIZE);
 		if (bytes_read == -1)
@@ -49,13 +46,14 @@ char	*read_till(int fd, char *str)
 			temp = NULL;
 			return (NULL);
 		}
+		if (bytes_read == 0)
+			return (free(temp), (str));
 		temp[bytes_read] = '\0';
-		str = gnl_strjoin(str, temp);
+		str = ft_strjoin(str, temp);
 		if (!str)
 			return (free(temp), NULL);
 	}
-	free(temp);
-	return (str);
+	return (free(temp), str);
 }
 
 char	*set_line(char *str)
