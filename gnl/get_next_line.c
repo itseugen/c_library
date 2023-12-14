@@ -36,7 +36,7 @@ char	*read_till(int fd, char *str)
 	temp = malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!temp)
 		return (NULL);
-	while (!ft_gnlchr(str, '\n') && bytes_read != 0)
+	while (!gnl_strchr(str, '\n') && bytes_read != 0)
 	{
 		bytes_read = read(fd, temp, BUFFER_SIZE);
 		if (bytes_read == -1)
