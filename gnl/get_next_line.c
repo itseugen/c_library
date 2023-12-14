@@ -46,8 +46,6 @@ char	*read_till(int fd, char *str)
 			temp = NULL;
 			return (NULL);
 		}
-		if (bytes_read == 0)
-			return (free(temp), (str));
 		temp[bytes_read] = '\0';
 		str = ft_strjoin(str, temp);
 		if (!str)
